@@ -2,8 +2,8 @@ import axios from "axios";
 import { useAuthStore } from "../stores/useAuthStore";
 
 export const axiosInstance = axios.create({
-  baseURL: "/api",          // ⭐ 핵심
-  //baseURL: "http://113.198.66.75:13127",
+  //baseURL: "/api",          // ⭐ 핵심
+  baseURL: "http://113.198.66.75:13127",
   withCredentials: true,    // refreshToken 쿠키
 });
 
